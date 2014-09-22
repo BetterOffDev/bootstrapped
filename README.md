@@ -20,10 +20,11 @@ Once you have the theme files downloaded, make sure you have Node installed. Run
 
 ### Credits
 
-A special thanks to these projects for helping me get this going...
+A special thanks to these projects and tutorials for helping me get this going...
 
 * [WordPress Starter Theme](https://github.com/mattbanks/WordPress-Starter-Theme)
 * [WordPress Bootstrap](https://github.com/320press/wordpress-bootstrap)
+* [Scotch Grunt Starter Guide](http://scotch.io/bar-talk/a-simple-guide-to-getting-started-with-grunt)
 * [Official SASS port of Bootstrap](https://github.com/twbs/bootstrap-sass)
 * [FontAwesome SASS](https://github.com/FortAwesome/font-awesome-sass)
 * More coming soon!
