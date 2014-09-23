@@ -21,7 +21,7 @@ Once you have the theme files downloaded, make sure you have Node installed. Run
 This is 100% open source and I fully support you taking this starter theme and running with it. Take the theme and customize it to your heart's desire! I'm open to pull requests and contributors as well.
 
 
-### Credits
+### Credits 
 
 A special thanks to these projects and tutorials for helping me get this going...
 
