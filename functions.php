@@ -1,9 +1,25 @@
 <?php
-// functions.php
+/**
+ * bootstrapped functions and definitions
+ *
+ * @package bootstrapped
+ */
 
-// bring in required core files
+/****************************************
+Theme Setup
+*****************************************/
 
-//// include an init file that adds basic actions/filters - wrap in if (function_exists)
+/**
+ * Theme initialization
+ */
+require get_template_directory() . '/lib/init.php';
+
+/**
+ * Custom theme functions definited in /lib/init.php
+ */
+require get_template_directory() . '/lib/theme-functions.php';
+
+
 
 // admin area functions
 
