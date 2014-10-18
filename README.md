@@ -43,3 +43,13 @@ A special thanks to these projects and tutorials for helping me get this going..
 * [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
 * [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 * [grunt-rsync](https://github.com/jedrichards/grunt-rsync)
+
+#### Releases
+* 10/18/14 - Release 1.0.1
+...Now uses grunt-contrib-copy to move FontAwesome files upon install
+...Grunt now has multiple tasks; grunt start and grunt devel (replaces default task)
+...Starter styles included in .scss partial files
+...Partials folder included to house partial template files (loops, etc)
+...Basic structure given to WP template files
+* 9/22/14 - Release 1.0.0
+... Initial commit
