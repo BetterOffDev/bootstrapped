@@ -1,6 +1,7 @@
 <?php
 /**
  * bootstrapped theme init setup
+ * functions defined in theme-functions.php
  *
  * @package bootstrapped
  */

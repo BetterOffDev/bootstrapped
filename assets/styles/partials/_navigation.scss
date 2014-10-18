@@ -1,0 +1,31 @@
+/**
+ * Primary Navigation Menu
+ */
+
+#primary-nav.navbar {
+	border-radius: 0;
+}
+
+#primary-nav.navbar-inverse {
+	background-color: $main-gray;
+	border-color: $main-gray;
+}
+
+#primary-nav .navbar-brand {
+	color: #FFFFFF;
+	padding: 8px;
+} 
+
+#primary-nav button.navbar-toggle {
+	background-color: $main-gray;
+	border-color: $main-gray;
+}
+
+#primary-nav ul.navbar-nav a {
+	color: #FFFFFF;
+}
+
+#primary-nav .in li a,
+#primary-nav .collapsing li a {
+	text-align: center;
+}

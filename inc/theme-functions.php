@@ -1,6 +1,7 @@
 <?php
 /**
- * bootstrapped theme functions definted in /lib/init.php
+ * bootstrapped theme functions 
+ * functions initialized with actions/filters in /lib/init.php
  *
  * @package bootstrapped
  */
@@ -22,29 +23,6 @@ function wsdev_remove_dashboard_widgets() {
 	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
 }
 
-/**
- * Change Admin Menu Order
- */
-function wsdev_custom_menu_order( $menu_ord ) {
-	if ( !$menu_ord ) return true;
-	return array(
-		// 'index.php', // Dashboard
-		// 'separator1', // First separator
-		// 'edit.php?post_type=page', // Pages
-		// 'edit.php', // Posts
-		// 'upload.php', // Media
-		// 'gf_edit_forms', // Gravity Forms
-		// 'genesis', // Genesis
-		// 'edit-comments.php', // Comments
-		// 'separator2', // Second separator
-		// 'themes.php', // Appearance
-		// 'plugins.php', // Plugins
-		// 'users.php', // Users
-		// 'tools.php', // Tools
-		// 'options-general.php', // Settings
-		// 'separator-last', // Last separator
-	);
-}
 
 /**
  * Hide Admin Areas that are not used
@@ -67,21 +45,10 @@ function wsdev_imagelink_setup() {
  * Enqueue scripts
  */
 function wsdev_scripts() {
-	// wp_enqueue_style( '_mbbasetheme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'db-styles', get_template_directory_uri() . '/dist/styles/style.min.css' );
 
-	// wp_enqueue_script( '_mbbasetheme-navigation', get_template_directory_uri() . '/assets/js/vendor/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'db-scripts', get_template_directory_uri() . '/dist/js/main.min.js', array('jquery'), NULL, true );
 
-	// wp_enqueue_script( '_mbbasetheme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/vendor/skip-link-focus-fix.js', array(), '20130115', true );
-
-	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-	// 	wp_enqueue_script( 'comment-reply' );
-	// }
-
-	// if ( !is_admin() ) {
-	// 	wp_enqueue_script( 'jquery' );
-	// 	wp_enqueue_script( 'customplugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array('jquery'), NULL, true );
-	// 	wp_enqueue_script( 'customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array('jquery'), NULL, true );
-	// }
 }
 
 /**

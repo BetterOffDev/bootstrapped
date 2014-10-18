@@ -1,0 +1,30 @@
+/**
+ * Global styles
+ */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+}
+
+a,
+a:visited,
+a:active {
+	color: $logo-red;
+}
+
+a:hover {
+	color: $main-red;
+}
+
+#wrap {
+  	min-height: 100%;
+  	height: auto;
+  	margin: 0 auto -50px;
+  	padding: 0 0 50px 0;
+}
+
+#push {
+	height: 50px;
+}

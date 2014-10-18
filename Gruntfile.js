@@ -18,6 +18,15 @@ module.exports = function(grunt) {
             }
         },
 
+        copy: {
+            main: {
+                files: [
+                    // move the fontawesome font files
+                    {expand: true, src: ['assets/fontawesome/fonts/*'], dest: 'dist/fonts/', filter: 'isFile'},
+                ],
+            },
+        },
+
         // watch for changes and trigger sass, jshint, uglify and livereload
         watch: {
             sass: {
@@ -29,7 +38,7 @@ module.exports = function(grunt) {
                 tasks: ['jshint', 'uglify']
             },
             images: {
-                files: ['assets/images/**/*.{png,jpg,gif}'],
+                files: ['assets/img/*.{png,jpg,gif}'],
                 tasks: ['imagemin']
             }
         },
@@ -76,7 +85,7 @@ module.exports = function(grunt) {
                 files: {
                     'dist/js/main.min.js': [
                         'assets/js/**/*.js',
-                        'assets/bootstrap-sass-official/assets/javascripts/*.js'
+                        'assets/bootstrap-sass-official/assets/javascripts/bootstrap.js'
                     ]
                 }
             }
@@ -104,7 +113,7 @@ module.exports = function(grunt) {
             options: {
                 src: "./",
                 args: ["--verbose"],
-                exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc', 'bower.json'],
+                exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc', 'bower.json', '.bowerrc'],
                 recursive: true,
                 syncDestIgnoreExcl: true
             },
@@ -127,7 +136,8 @@ module.exports = function(grunt) {
     // rename tasks
     grunt.renameTask('rsync', 'deploy');
 
-    // register task
-    grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'imagemin', 'watch']);
+    // register tasks
+    grunt.registerTask('start', ['bower', 'copy']);
+    grunt.registerTask('devel', ['sass', 'cssmin', 'uglify', 'imagemin', 'watch']);
 
 };
