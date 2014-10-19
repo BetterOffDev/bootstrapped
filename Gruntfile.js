@@ -22,7 +22,13 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     // move the fontawesome font files
-                    {expand: true, src: ['assets/fontawesome/fonts/*'], dest: 'dist/fonts/', filter: 'isFile'},
+                    {
+                        expand: true, 
+                        flatten: true, 
+                        src: ['assets/fontawesome/fonts/**'], 
+                        dest: 'dist/fonts/', 
+                        filter: 'isFile'
+                    },
                 ],
             },
         },
@@ -40,6 +46,9 @@ module.exports = function(grunt) {
             images: {
                 files: ['assets/img/*.{png,jpg,gif}'],
                 tasks: ['imagemin']
+            },
+            options: {
+                livereload: true,
             }
         },
 
