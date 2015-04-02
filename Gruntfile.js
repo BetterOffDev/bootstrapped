@@ -145,6 +145,6 @@ module.exports = function(grunt) {
 
     // register tasks
     grunt.registerTask('start', ['bower', 'copy']);
-    grunt.registerTask('devel', ['sass', 'cssmin', 'uglify', 'imagemin', 'watch']);
+    grunt.registerTask('work', ['sass', 'cssmin', 'uglify', 'imagemin', 'watch']);
 
 };
