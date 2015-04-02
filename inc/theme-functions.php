@@ -45,9 +45,9 @@ function wsdev_imagelink_setup() {
  * Enqueue scripts
  */
 function wsdev_scripts() {
-	wp_enqueue_style( 'db-styles', get_template_directory_uri() . '/dist/styles/style.min.css' );
+	wp_enqueue_style( 'bootstrapped-styles', get_template_directory_uri() . '/dist/styles/style.min.css' );
 
-	wp_enqueue_script( 'db-scripts', get_template_directory_uri() . '/dist/js/main.min.js', array('jquery'), NULL, true );
+	wp_enqueue_script( 'bootstrapped-scripts', get_template_directory_uri() . '/dist/js/main.min.js', array('jquery'), NULL, true );
 
 }
 
