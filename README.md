@@ -8,7 +8,7 @@ Will Spencer ( [@wspencer428](http://twitter.com/wspencer428) )
 
 ## Summary
 
-Bootstrapped is a WordPress starter theme that is built with Twitter Bootstrap and lots of other goodies. Bootstrapped uses Bower for package management and will download/install Twitter Bootstrap Official Sass version and Font Awesome. Grunt is used to initialize the Bower install, move FontAwesome font files but will also run automated tasks for the user like watching files for changes, jshint, image optimization, css minification and uglify. The Grunt file also uses rsync to deploy versions of the theme to development, staging and production servers (or whatever you'd like).
+Bootstrapped is a WordPress starter theme that is built with Twitter Bootstrap and lots of other goodies. Bootstrapped uses Bower for package management and will download/install Twitter Bootstrap Official Sass version and FontAwesome. Grunt is used to initialize the Bower install, move FontAwesome font files but will also run automated tasks for the user like watching files for changes, jshint, image optimization, css minification and uglify. The Grunt file also uses rsync to deploy versions of the theme to development, staging and production servers (or whatever you'd like).
 
 *NOTE: This theme is still in development! Most WP theme files are still being built!
 
