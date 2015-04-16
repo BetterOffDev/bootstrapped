@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.5",
+    "grunt-cli": "latest",
     "grunt-bower-task" : "latest",
     "grunt-contrib-copy" : "latest",
     "grunt-contrib-cssmin": "latest",
