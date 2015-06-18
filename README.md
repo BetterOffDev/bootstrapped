@@ -4,7 +4,7 @@ Version: 1.0.1
 
 ## Author:
 
-Will Spencer ( [@wspencer428](http://twitter.com/wspencer428) )
+Will Spencer ( [@BetterOffDev](http://twitter.com/BetterOffDev) )
 
 ## Summary
 
