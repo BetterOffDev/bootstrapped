@@ -38,7 +38,7 @@ function wsdev_bootstrapped_setup() {
 	// Change Admin Menu Order
 	// Function location: /lib/theme-functions.php
 	add_filter( 'custom_menu_order', '__return_true' );
-	add_filter( 'menu_order', 'wsdev_custom_menu_order' );
+	//add_filter( 'menu_order', 'wsdev_custom_menu_order' );
 
 	// Hide Admin Areas that are not used
 	// Function location: /lib/theme-functions.php
